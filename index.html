@@ -6,12 +6,15 @@
 	<title>Akindele Ebenezer </title>
 	<style>
 
-* {
-	font-size: 1.1rem;
+* { 
 	font-family: arial;  
 	line-height: 1.5867rem;
 	margin: 0;
 	padding: 0; 
+}
+
+main {
+	overflow: hidden;
 }
 
 a {
@@ -256,7 +259,7 @@ header nav ul {
 li {
 	list-style: none;
 } 
-
+ 
 #main-profile { 
 	color: #333;
 	padding: 1.5rem;
@@ -293,7 +296,13 @@ li {
 #main-profile .skills img {
 	width: 90%;
 } 
- 
+
+@media (min-width: 788px) {
+	#status {
+		opacity: .3;
+	}
+}
+
 @media (max-width: 1399px) {
 	#welcome {
 		margin-left: 3rem;
@@ -306,12 +315,104 @@ li {
 	}
 }
  
+@media (max-width: 1218px) {
+	section#about h1,  #about p {
+		font-size: 1.5rem
+	}
+}
+
 @media (max-width: 1151px) {
 	#welcome {
 		margin-left: 9rem;
 	}
-} 
-//......................................................... continue the queries here
+}
+
+@media (max-width: 1054px) {
+	 #certificates {
+		margin-bottom: 20rem;
+		transform: translate(0%, 0%)	 
+	}
+	
+	.certificates.cert-1, .certificates.cert-2 {
+		width: 15rem;
+	}
+}
+   
+@media (max-width: 996px) {
+	header nav ul {
+		display: none;
+	}
+}
+  
+@media (max-width: 958px) {
+	section#about h1, #about p {
+		font-size: 1.1rem;
+	}
+}
+ 
+@media (max-width: 927px) {
+	#welcome {
+		margin-left: 12rem;
+	}
+}
+ 
+@media (max-width: 788px) { 
+	#welcome { 
+		margin: -5rem; 
+		transform: translateY(4rem);
+	}
+
+	#status {  
+		opacity: .2; 
+	}  
+}  
+    
+@media (max-width: 692px) {
+	#main-profile h2 { 
+		font-size: 1.8rem; 
+	}
+}
+   
+@media (min-width: 552px) {
+	#about p { 
+		font-size: .8rem;
+		padding: .5rem;
+	}
+}
+   
+@media (max-width: 550px) {
+	section#about h1, #about p { 
+		font-size: .8rem;
+		padding: .5rem;
+	}
+}
+    
+@media (max-width: 550px) {
+	div#skills { 
+		background: none;
+		display: block;
+	}
+
+	#main-profile .skills {
+		margin-left: .5rem;
+		margin-block: 1.5rem;
+		padding: 2rem;
+		width: 10rem;
+	}
+}
+     
+@media (max-width: 430px) {
+	#main-profile h2 { 
+		font-size: 1.1rem; 
+	}
+}
+
+@media (max-width: 274px) { 
+	#welcome { 
+		font-size: 1.5rem;
+	} 
+}  
+  
 .p-center { 
 	background: #333;
 	color: white;
@@ -460,7 +561,6 @@ section#home-status {
 	background-size: contain;
 	background-repeat: no-repeat;
 	height: 90%;
-	opacity: .6;
 	transform: translateY(2.5rem);
 	width: 100%; 
 }
