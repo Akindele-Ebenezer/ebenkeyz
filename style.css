@@ -349,7 +349,7 @@ li {
 	}
 
 	#project-1 { 
-		background: url('images/sola.png');
+		background: url('images/sola.PNG');
 		background-repeat: no-repeat;
 		background-size: cover;
 		height: 11rem; 
@@ -357,7 +357,7 @@ li {
 	}
 
 	#project-2 { 
-		background: url('images/eben.png');
+		background: url('images/eben.PNG');
 		background-repeat: no-repeat;
 		background-size: cover;
 		height: 11rem;  
@@ -366,7 +366,7 @@ li {
 	}
 
 	#project-3 { 
-		background: url('images/counter.png');
+		background: url('images/counter.PNG');
 		background-repeat: no-repeat;
 		background-size: cover;
 		height: 11rem; 
@@ -380,7 +380,7 @@ li {
 	}	
 
 	#project-1 { 
-		background: url('images/sola.png');
+		background: url('images/sola.PNG');
 		background-repeat: no-repeat;
 		background-size: cover;
 		height: 12rem; 
@@ -390,7 +390,7 @@ li {
 	}
 
 	#project-2 { 
-		background: url('images/eben.png');
+		background: url('images/eben.PNG');
 		background-repeat: no-repeat;
 		background-size: cover;
 		height: 11rem;  
@@ -400,7 +400,7 @@ li {
 }
 
 	#project-3 { 
-		background: url('images/counter.png');
+		background: url('images/counter.PNG');
 		background-repeat: no-repeat;
 		background-size: cover;
 		height: 11rem; 
