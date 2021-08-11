@@ -237,8 +237,7 @@ header nav ul {
 }
 
 .heading {
-	color: #000;
-	font-size: 3rem;
+	color: #000; 
 	font-family: verdana;
 	text-align: center; 
 }
@@ -263,8 +262,7 @@ li {
 
 #main-profile h2 {
 	color: #000;
-	font-family: verdana;
-	font-size: 3rem; 
+	font-family: verdana;  
 	margin-block: 1.5rem;
 	text-align: center;
 	transform: translateY(-2rem);
@@ -373,27 +371,7 @@ li {
 		background-size: cover;
 		height: 11rem; 
 		width: 17rem;
-	} 
-
-	#project-1:hover { 
-		box-shadow: .5rem .5rem 2rem #333;
-		margin-bottom: 2rem;
-		transition: 1s;
-	}
-
-	#project-2:hover { 
-		box-shadow: .5rem .5rem 2rem #333;
-		margin-bottom: 2rem;
-		transition: 1s;
-	}
-
-	#project-3:hover { 
-		box-shadow: .5rem .5rem 2rem #333;
-		margin-bottom: 2rem;
-		transition: 1s;
-	}
-
-
+	}  
 }
 
 @media (max-width: 880px) {
@@ -428,26 +406,7 @@ li {
 		height: 11rem; 
 		margin: 6rem;
 		width: 25rem;
-	} 
-
-	#project-1:hover { 
-		box-shadow: .5rem .5rem 2rem #333; 
-		transition: 1s;
-		transform: translateX(2rem);
-	}
-
-	#project-2:hover { 
-		box-shadow: .5rem .5rem 2rem #333; 
-		transition: 1s;
-		transform: translateX(2rem);
-	}
-
-	#project-3:hover { 
-		box-shadow: .5rem .5rem 2rem #333; 
-		transition: 1s;
-		transform: translateX(2rem);
-	}
-
+	}  
 }
 
 @media (min-width: 788px) {
@@ -483,6 +442,12 @@ li {
 @media (max-width: 1231px) {
 	 #piano-videos #video-2 {
 		transform: translateX(16.5rem);
+	}
+}
+
+@media (min-width: 1218px) {
+	section#about h1, #eben-music {
+		font-size: 1.5rem
 	}
 }
 
@@ -724,7 +689,13 @@ li {
 		width: 15rem;
 	} 
 }
-    
+         
+@media (max-width: 465px) {
+	#eben-music {  
+		margin-top: 2rem;
+	}
+}
+   
 @media (max-width: 464px) {
 	#project-1 { 
 		transform: translateX(-4rem); 
@@ -745,11 +716,36 @@ li {
 		transform: scale(.8);
 	}
 }
-     
+ 
+@media (min-width: 432px) {  
+	#welcome {  
+		background: rgba(0, 0, 0, .4);
+		color: #fff;
+		display: inline-block;
+		left: 40%;
+		padding: 3rem;
+		position: absolute;
+		top: 25%;
+	}
+}
+  
+@media (max-width: 432px) {
+	#welcome { 
+		background: rgba(0, 0, 0, .4);
+		color: #fff;
+		display: inline-block;
+		left: 40%;
+		padding: .5rem;
+		position: absolute;
+		top: 19%;
+	}
+}
+       
 @media (max-width: 430px) {
 	#main-profile h2 { 
 		font-size: 1.1rem; 
 	}
+
 }
       
 @media (max-width: 384px) {
@@ -832,8 +828,7 @@ li {
 } 
 
 #projects {
-	background: rgba(255, 0, 0, .1);
-	b
+	background: rgba(255, 0, 0, .1); 
 	width: 80%;
 }
  
@@ -903,16 +898,6 @@ section#home-status {
 
 #submit {
 	margin-bottom: 2rem;
-}
- 
-#welcome {  
-	background: rgba(0, 0, 0, .4);
-	color: #fff;
-	display: inline-block;
-	left: 40%;
-	padding: 3rem;
-	position: absolute;
-	top: 25%;
 }
 
 #welcome h1 {
