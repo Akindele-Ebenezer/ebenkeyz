@@ -28,7 +28,7 @@ a {
 } 
 
 .certificates.cert-1 { 
-	background: url('images/coursera.png'); 
+	background: url('images/coursera.PNG'); 
 	background-size: contain;
 	height: 100%;
 	width: 50%;
