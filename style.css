@@ -197,7 +197,7 @@ header {
 	padding: .5rem;
 	position: sticky;
 	top: 0; 
-	transform: translateX(-1.8rem);
+	transform: translate(-1.8rem, -1.8rem);
 	margin-right: -2rem;
 	z-index: 2;
 }
@@ -241,6 +241,10 @@ header nav ul {
 	font-size: 3rem;
 	font-family: verdana;
 	text-align: center; 
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @keyframes welcome {
@@ -289,6 +293,55 @@ li {
 	width: 90%;
 } 
 
+#main-profile .skills img:hover {
+	transform: translateY(-2rem);
+	transition: 1s;
+}
+
+@media (min-width: 997px) {
+	 #drop-down {
+		display: none;
+	}
+}
+
+@media (max-width: 997px) {
+	#drop-down {
+		background: #333;
+		border: 1px solid #000;
+		display: none;
+		font-family: verdana;
+		position: absolute;
+		width: 98%;
+		z-index: 2;
+	}
+
+	#drop-down a {
+		color: #fff;
+	}
+
+	#drop-down a:hover {
+		text-decoration: underline;
+		text-decoration-color: red;
+		transition: 1s;
+	}
+
+	#drop-down li {
+		border: 1px solid #000;
+		padding: 1.5rem;
+	}
+	
+	#mobile-nav img {
+		position: absolute;
+		right: .5rem;
+		top: 2rem;
+		z-index: 3;
+	}
+
+	#status {
+		opacity: .3;
+	}
+}	
+
 @media (min-width: 880px) {
 	#projects {
 		align-items: center; 
@@ -312,7 +365,7 @@ li {
 		height: 11rem;  
 		position: relative;
 		width: 17rem;
-}
+	}
 
 	#project-3 { 
 		background: url('images/counter.png');
@@ -498,10 +551,11 @@ li {
 	}
 }
 
-@media (max-width: 788px) { 
+@media (max-width: 788px) {     
 	#welcome { 
+		height: 80%;
 		margin: -5rem; 
-		transform: translateY(4rem);
+		transform: translate(-2rem, -6rem);
 	}
 
 	#status {  
@@ -526,13 +580,19 @@ li {
 		width: 90%; 	 
 	} 
 }
-   
+
+@media (max-width: 713px) {
+	 #welcome {
+		transform: translateY(-2.5rem) 	 
+	} 
+}
+      
 @media (max-width: 692px) {
 	#main-profile h2 { 
 		font-size: 1.8rem; 
 	}
 }
-
+     
 @media (min-width: 659px) {
 	#piano-videos video { 
 		transform: translateX(2.5rem);
@@ -564,7 +624,19 @@ li {
 		width: 20rem; 
 	}
 }
-    
+
+@media (max-width: 638px) {
+	article { 
+		transform: translateY(-30rem);
+	}
+}
+ 
+@media (min-width: 638px) {
+	article { 
+		transform: translateY(-9rem);
+	}
+}
+     
 @media (min-width: 552px) {
 	#about p { 
 		font-size: .8rem;
@@ -667,9 +739,9 @@ li {
 	}
 }
         
-@media (max-width: 444px) {
+@media (max-width: 463px) {
 	form {  
-		margin-left: -9rem;
+		margin-left: -10rem;
 		transform: scale(.8);
 	}
 }
@@ -679,14 +751,44 @@ li {
 		font-size: 1.1rem; 
 	}
 }
-    
+      
+@media (max-width: 384px) {
+	#footer li {
+		transform: translateX(-4rem);
+	}
+}
+
+@media (max-width: 377px) {
+	article {
+		transform: translateY(-33rem);
+	}
+
+	#welcome {   
+		transform: translateX(-3rem);
+	}
+}
+      
+@media (min-width: 378px) {
+	#welcome h1 {
+		color: #333; 
+	}
+}
+      
+@media (max-width: 377px) {
+	#welcome h1 {
+		background: rgba(3, 3, 3, .4);
+		color: #bbb;
+		padding: 2rem;
+	}
+}
+
 @media (max-width: 352px) {
 	form {  
 		margin-left: -9rem;
 		transform: scale(.7);
 	}
 }
-
+       
 @media (max-width: 274px) { 
 	#welcome { 
 		font-size: 1.5rem;
@@ -728,6 +830,12 @@ li {
 	display: flex;
 	justify-content: center;
 } 
+
+#projects {
+	background: rgba(255, 0, 0, .1);
+	b
+	width: 80%;
+}
  
 #projects a {
 	margin: 1.12%;
@@ -759,19 +867,23 @@ section#about h1 {
 section#about img { 
 	border-radius: 50%;
 	width: 30%;
-}
-
-section#about img:hover { 
-	margin-top: -2.5rem;
-	transition: 1s;
-}
+} 
 
 section#home-status {
 	background: #000;
+	background: url('images/eben-bg.jpg');
+	background-color: rgba(255, 0, 0, .2);
+	background-repeat: no-repeat;	
+	background-size: contain;
 	border: 1px solid #000;
-	height: 100%;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #fff;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+ 	filter: blur(1px);
+	height: 100%;	
 	position: relative;
-	transform: translateY(-6rem);
+	transform: translateY(-8rem);
 }
  
 #skills {
@@ -782,32 +894,32 @@ section#home-status {
 	padding: .74rem;
 }
 
-#status {
-	background: url('images/eben-bg.jpg');
-	background-size: contain;
-	background-repeat: no-repeat;
+#status {  
 	height: 90%;
+	margin-bottom: 53rem;
 	transform: translateY(2.5rem);
 	width: 100%; 
 }
 
-#submit { 
-	margin: .5rem;
+#submit {
+	margin-bottom: 2rem;
 }
-
-#welcome { 
+ 
+#welcome {  
+	background: rgba(0, 0, 0, .4);
 	color: #fff;
 	display: inline-block;
 	left: 40%;
+	padding: 3rem;
 	position: absolute;
 	top: 25%;
 }
 
 #welcome h1 {
 	animation-name: welcome;
-	animation-duration: 3s;
+	animation-duration: 3s; 
 	font-size: 3rem;
-	margin-block: 1.5rem;
+	margin-block: 2.5rem;
 } 
 
 .video h1 {
